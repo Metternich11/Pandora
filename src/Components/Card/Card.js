@@ -1,16 +1,15 @@
 import React from 'react';
 import './Card.css';
-import harpye from '../../images/harpye.png'
-
 import CardStats from './CardStats';
 
 const Card = props => {
+  const image = require('../../Wesen/images/' + props.data.image);
   return (
     <div className="card-container">
-      <h2>Harpye - Wesen</h2>
-      <img className="image" src={harpye} alt="harpye" />
+      <h2>{props.data.name}</h2>
+      <img className="image" src={image} alt={props.data.name} />
       <div className="stats">
-        <CardStats />
+        <CardStats data={props.data} atk={props.atk} currentData={props.currentData}/>
       </div>
     </div>
   )

@@ -1,0 +1,14 @@
+{
+  "Harpye": {
+    "name": "Harpye",
+    "typ": "Monster",
+    "image": "harpye.png",
+    "maxHP": 100,
+    "maxMP": 10,
+    "maxWP": 5,
+    "special": {
+      "name": "Kreischen",
+      "description": "All Wesen vom Typ Mensch können in der nächsten Runde weder angreifen noch Zauber wirken"
+    }
+  }
+}

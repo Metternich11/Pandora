@@ -1,18 +1,17 @@
 import React from 'react';
 import './CardStats.css';
 
-const hp = 100;
-const mana = 10;
-
 const CardStats = props => {
   return (
-<div class="stats-container">
-  <div class="box a">A</div>
-  <div class="box b">B</div>
-  <div class="box c">C</div>
-  <div class="box d">D</div>
-  <div class="box e">E</div>
-  <div class="box f">F</div>
+<div className="stats-container">
+  <div className="box a">{props.currentData.currentMP}/{props.data.maxMP}</div>
+  <div className="box b">{props.currentData.currentHP}/{props.data.maxHP}</div>
+  <div className="box c">{props.currentData.currentWP}/{props.data.maxWP}</div>
+  <div className="box d">
+    <button onClick={props.atk}>Attack</button>
+  </div>
+  <div className="box e">E</div>
+  <div className="box f">F</div>
 </div>
   )
 }
